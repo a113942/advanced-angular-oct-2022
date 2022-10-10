@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { MastHeadComponent } from './components/mast-head/mast-head.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AlertComponent, CoreUiModule } from '@ht/core-ui';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    AlertComponent,
     RouterModule.forRoot(routes),
   ],
   providers: [],
