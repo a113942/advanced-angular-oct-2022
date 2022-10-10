@@ -1,6 +1,5 @@
 import { EntityState, createEntityAdapter } from '@ngrx/entity';
 import { createReducer, Action, on } from '@ngrx/store';
-import { CustomerDocuments } from '../actions/customer.actions';
 
 export interface CustomerEntity {
   id: string;
@@ -18,7 +17,4 @@ export const adapter = createEntityAdapter<CustomerEntity>();
 
 const initialState = adapter.getInitialState();
 
-export const reducer = createReducer(
-  initialState,
-  on(CustomerDocuments.customers, (s, a) => adapter.setAll(a.payload, s)),
-);
+export const reducer = createReducer(initialState);
