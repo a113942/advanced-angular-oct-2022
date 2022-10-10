@@ -9,7 +9,7 @@ export class ResourcesComponent {
   items: LinkItem[] = [
     {
       title: 'NX - Monorepos for Angular',
-      content: 'The tool that wraps Angular CLI',
+      content: 'The tool that wraps <em>Angular CLI</em>',
       link: 'https://nx.dev',
       linkText: 'Learn about NX',
     },
@@ -18,6 +18,18 @@ export class ResourcesComponent {
       content: 'The UI Library',
       link: 'https://daisyui.com',
       linkText: 'The Open Source DaisyUI Site',
+    },
+    {
+      title: 'Tailwind',
+      content: 'Tailwind CSS',
+      link: 'https://tailwindcss.com',
+      linkText: 'Tailwind Site',
+    },
+    {
+      title: 'TypeScript',
+      content: 'The TypeScript Site',
+      link: 'https://typscriptlang.org',
+      linkText: 'Typescript Site',
     },
   ];
 }
